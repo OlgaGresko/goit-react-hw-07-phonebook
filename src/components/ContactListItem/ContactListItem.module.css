@@ -1,0 +1,12 @@
+
+.item {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.delete {
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: white;
+}
