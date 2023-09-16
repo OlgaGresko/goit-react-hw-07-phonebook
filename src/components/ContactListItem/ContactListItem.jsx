@@ -35,6 +35,10 @@ export const ContactListItem = ({ contact }) => {
     }
   };
 
+  const handleDeleteButton = id => {
+    dispatch(deleteContact(id));
+  };
+
   return (
     <li className={css.item}>
       {isEditMode ? (
@@ -57,7 +61,7 @@ export const ContactListItem = ({ contact }) => {
         <button
           className={css.delete}
           type="button"
-          onClick={() => dispatch(deleteContact(contact.id))}
+          onClick={() => handleDeleteButton(contact.id)}
         >
           Delete
         </button>
